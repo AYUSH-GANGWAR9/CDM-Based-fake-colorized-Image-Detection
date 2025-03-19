@@ -1,0 +1,18 @@
+IPPROJECT/
+├── .venv/
+├── data/
+│   ├── fake/
+│   └── real/
+├── src/
+│   ├── __pycache__/
+│   ├── cdm_utils.py
+│   ├── data_utils.py
+│   ├── evaluation.py
+│   ├── models.py
+│   ├── training.py
+│   └── visualization.py
+├── .python-version
+|
+├── main.py
+├── req.txt
+└── structure.txt

@@ -1,0 +1,8 @@
+numpy>=1.19.5
+tensorflow-macos>=2.9.0; sys_platform == 'darwin' and platform_machine == 'arm64'
+tensorflow>=2.9.0; (sys_platform != 'darwin' or platform_machine != 'arm64')
+tensorflow-metal>=0.5.0; sys_platform == 'darwin' and platform_machine == 'arm64'
+opencv-python>=4.5.5
+scikit-learn>=1.0.2
+matplotlib>=3.5.0
+tqdm>=4.62.3
