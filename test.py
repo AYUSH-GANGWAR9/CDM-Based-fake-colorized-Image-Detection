@@ -14,11 +14,11 @@ def main(test_image, img_size):
     detect_model = load_model(model_path, custom_objects={
         'custom_create_cdm': custom_create_cdm,
         'create_cdm': create_cdm,
-        'mse': MeanSquaredError()
+        'MSE': MeanSquaredError()
     })
     
     result, confidence = predict_image(detect_model, test_image, img_size=(img_size, img_size))
-    print(f"Classification result: {result} with {confidence:.2f} confidence")
+    print(f"Classification's result: {result} with {confidence:.2f} Accuracy")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Test Detection Model with Custom Image Input")
